@@ -1,0 +1,88 @@
+  .landing-container {
+    position: relative;
+    width: 100%;
+    height: 93vh; /* Full viewport height */
+    background: url('/public/Arts.png') no-repeat center center;
+    background-size: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2% 4%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 90%; /* Prevents the overlay from becoming too wide */
+    width: auto;
+  }
+  
+  .headline {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+  
+  .text {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    margin: 10px 0 0;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    .overlay {
+      width: 80%;
+    }
+    .headline {
+      font-size: 3rem; /* Slightly smaller for large tablets and desktops */
+    }
+    .text {
+      line-height: 1.5;
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .overlay {
+      width: 80%;
+    }
+    .headline {
+      font-size: 1.8rem; /* Smaller for tablets */
+    }
+    .text {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+  }
+  
+  @media (max-width: 768px) {
+    .overlay {
+      width: 80%;
+    }
+    .headline {
+      font-size: 2rem; /* Smaller for small tablets and large phones */
+    }
+    .text {
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .overlay {
+      width: 80%;
+    }
+    .headline {
+      font-size: 1.8rem; /* Smaller for mobile phones */
+    }
+    .text {
+      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+  }
+  

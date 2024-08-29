@@ -71,14 +71,18 @@ p{
 /* Responsive styles */
 @media (max-width: 1200px) {
   .fixed-image-container {
-    width: 130%;
+    width: 103%;
     height: auto;
-    margin-top: 15px;
+    margin-top: -3px;
     z-index: 2;
   }
 
   .fixed-image {
     margin-top: 0px;
+  }
+
+  .scroll-container{
+    height: 93vh;
   }
 
   .scroll-content {
@@ -97,13 +101,26 @@ p{
     margin-bottom: -20px;
     margin-top: 20px;
   }
+  h2{
+    font-size: 2.8rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  p{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
 }
 
 @media (max-width: 992px) {
   .fixed-image-container {
     width: 97%; /* Adjust to fit the screen */
     height: auto;
-    margin-top: 15px;
+    margin-top: -3px;
     z-index: 2;
   }
 
@@ -111,6 +128,10 @@ p{
     margin-top: 0;
     max-width: 100%; /* Ensure the image scales correctly */
     max-height: 100%; /* Ensure the image scales correctly */
+  }
+
+  .scroll-container{
+    height: 93vh;
   }
 
   .scroll-content {
@@ -129,6 +150,19 @@ p{
     margin-bottom: -20px;
     margin-top: 20px;
   }
+  h2{
+    font-size: 2.4rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  p{
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
 }
 
 
@@ -136,12 +170,16 @@ p{
   .fixed-image-container {
     width: 97%;
     height: auto;
-    margin-top: 40px;
+    margin-top: -1px;
     z-index: 2;
   }
 
   .fixed-image {
     margin-top: 0px;
+  }
+
+  .scroll-container{
+    height: 93vh;
   }
 
   .scroll-content {
@@ -159,6 +197,19 @@ p{
   .headline {
     margin-bottom: -20px;
     margin-top: 20px;
+  }
+  h2{
+    font-size: 1.2rem;
+    width: 99%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  p{
+    font-size: 0.9rem;
+    width: 99%;
+    text-align: center;
+    line-height: 1.5;
   }
 }
 
@@ -166,12 +217,20 @@ p{
   .fixed-image-container {
     width: 97%;
     height: auto;
-    margin-top: 26px;
+    margin-top: -1px;
     z-index: 2;
   }
 
   .fixed-image {
     margin-top: 0px;
+  }
+
+  .scroll-container{
+    height: 90vh;
+  }
+
+  .scroll-item{
+    height: 89vh;
   }
 
   .scroll-content {
@@ -182,12 +241,25 @@ p{
   .scroll-text {
     width: 100%;
     font-size: medium;
-    margin-top: 250px;
+    margin-top: 300px;
     text-align: center;
   }
 
   .headline {
     margin-bottom: -20px;
     margin-top: 20px;
+  }
+  h2{
+    font-size: 1.2rem;
+    width: 99%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  p{
+    font-size: 0.9rem;
+    width: 99%;
+    text-align: center;
+    line-height: 1.5;
   }
 }

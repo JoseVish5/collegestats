@@ -1,88 +1,265 @@
+.landing-container {
+  position: relative;
+  width: 100%;
+  height: 93vh; /* Full viewport height */
+  background: url('/public/Arts.png') no-repeat center center;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 2% 4%;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  max-width: 90%; /* Prevents the overlay from becoming too wide */
+  width: auto;
+}
+
+.headline1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.text {
+  line-height: 1.5;
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+
+.content {
+  text-align: center;
+}
+
+.headline {
+  color: black;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 2.5rem;
+  line-height: 1.2;
+  margin: 5px 0;
+  margin-bottom: 25px;
+}
+
+.paragraph2 {
+  color: #404040;
+  font-family: Knowledge, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  font-weight: 100;
+  text-align: center;
+  max-width: 700px;
+  margin: 20px auto;
+  margin-bottom: 25px;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
   .landing-container {
-    position: relative;
-    width: 100%;
-    height: 93vh; /* Full viewport height */
-    background: url('/public/Arts.png') no-repeat center center;
-    background-size: cover;
+    margin-bottom: 100px;
   }
-  
   .overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 2% 4%;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    max-width: 90%; /* Prevents the overlay from becoming too wide */
-    width: auto;
+    width: 80%;
   }
-  
-  .headline {
-    font-size: 2.5rem;
-    margin: 0;
+  .headline1 {
+    font-size: 3rem; /* Slightly smaller for large tablets and desktops */
   }
-  
   .text {
     line-height: 1.5;
-    font-size: 1.2rem;
-    margin: 10px 0 0;
+    font-size: 1.8rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 1200px) {
-    .overlay {
-      width: 80%;
-    }
-    .headline {
-      font-size: 3rem; /* Slightly smaller for large tablets and desktops */
-    }
-    .text {
-      line-height: 1.5;
-      font-size: 1.8rem;
-    }
+  .content {
+    margin-top: -100px;
+    text-align: center;
   }
-  
-  @media (max-width: 992px) {
-    .overlay {
-      width: 80%;
-    }
-    .headline {
-      font-size: 1.8rem; /* Smaller for tablets */
-    }
-    .text {
-      font-size: 1rem;
-      line-height: 1.5;
-    }
+  .headline {
+    font-size: 2.5rem; 
+    margin-bottom: 35px;
+  }
+  .paragraph2 {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    line-height: 1.6;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 700px;
+    margin-bottom: 35px;
+  }
+}
 
+@media (max-width: 992px) {
+  .landing-container {
+    margin-bottom: 100px;
   }
-  
-  @media (max-width: 768px) {
-    .overlay {
-      width: 80%;
-    }
-    .headline {
-      font-size: 2rem; /* Smaller for small tablets and large phones */
-    }
-    .text {
-      line-height: 1.5;
-      font-size: 1rem;
-    }
+  .overlay {
+    width: 80%;
   }
-  
-  @media (max-width: 576px) {
-    .overlay {
-      width: 80%;
-    }
-    .headline {
-      font-size: 1.8rem; /* Smaller for mobile phones */
-    }
-    .text {
-      line-height: 1.5;
-      font-size: 0.9rem;
-    }
+  .headline1 {
+    font-size: 1.8rem; /* Smaller for tablets */
   }
-  
+  .text {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .content {
+    margin-top: -100px;
+    text-align: center;
+  }
+  .headline {
+    font-size: 2.5rem; 
+    margin-bottom: 35px;
+  }
+  .paragraph2 {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    line-height: 1.6;
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 700px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .landing-container {
+    margin-bottom: 100px;
+  }
+  .overlay {
+    width: 80%;
+  }
+  .headline1 {
+    font-size: 2rem; /* Smaller for small tablets and large phones */
+  }
+  .text {
+    line-height: 1.5;
+    font-size: 1rem;
+  }
+  .content {
+    margin-top: -100px;
+    text-align: center;
+  }
+  .headline {
+    font-size: 2rem; 
+  }
+  .paragraph2 {
+    margin-left: 8px;
+    font-size: 0.8rem;
+}
+}
+
+@media (max-width: 576px) {
+  .landing-container {
+    margin-bottom: 50px;
+  }
+  .overlay {
+    width: 80%;
+  }
+  .headline1 {
+    font-size: 1.8rem; /* Smaller for mobile phones */
+  }
+  .text {
+    line-height: 1.5;
+    font-size: 0.9rem;
+  }
+  .content {
+    margin-top: -100px;
+    text-align: center;
+  }
+  .paragraph2 {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    line-height: 1.6;
+    font-weight: 400;
+    font-size: 0.9rem; 
+    text-align: center;
+    margin: 10px auto;
+    max-width: 90%;
+    margin-bottom: 20px;
+  }
+  .headline {
+    margin-top: 50px;
+    font-size: 1.6rem;
+  }
+}
+
+@media (min-width: 1368px) and (max-width: 1368px) and (max-height: 768px){
+  .landing-container {
+    margin-bottom: 100px;
+  }
+  .overlay {
+    width: 60%;
+  }
+  .headline1 {
+    font-size: 2.8rem; /* Slightly smaller for large tablets and desktops */
+  }
+  .text {
+    line-height: 1.5;
+    font-size: 1.6rem;
+  }
+  .content {
+    margin-top: -100px;
+    text-align: center;
+  }
+  .headline {
+    font-size: 2.3rem; 
+    margin-bottom: 35px;
+  }
+
+  .paragraph2 {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    line-height: 1.6;
+    font-weight: 100;
+    font-size: 1.3rem;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 700px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 1920px) and (max-height: 1080px) {
+  .landing-container {
+    margin-bottom: 100px;
+  }
+  .overlay {
+    width: 50%;
+  }
+  .headline1 {
+    font-size: 3rem; /* Slightly smaller for large tablets and desktops */
+  }
+  .text {
+    line-height: 1.5;
+    font-size: 1.8rem;
+  }
+  .content {
+    margin-top: -100px;
+    text-align: center;
+  }
+  .headline {
+    font-size: 2.8rem; 
+    margin-bottom: 35px;
+  }
+
+  .paragraph2 {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    line-height: 1.6;
+    font-weight: 100;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 10px auto;
+    max-width: 700px;
+    margin-bottom: 35px;
+  }
+}

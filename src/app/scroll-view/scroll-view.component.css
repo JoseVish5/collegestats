@@ -168,14 +168,16 @@ p{
 
 @media (max-width: 768px) {
   .fixed-image-container {
-    width: 97%;
+    width: 97%; /* Adjust to fit the screen */
     height: auto;
-    margin-top: -1px;
+    margin-top: -3px;
     z-index: 2;
   }
 
   .fixed-image {
-    margin-top: 0px;
+    margin-top: 0;
+    max-width: 100%; /* Ensure the image scales correctly */
+    max-height: 100%; /* Ensure the image scales correctly */
   }
 
   .scroll-container{
@@ -189,8 +191,8 @@ p{
 
   .scroll-text {
     width: 100%;
-    font-size: medium;
-    margin-top: 250px;
+    font-size: xx-large;
+    margin-top: 400px; /* Adjusted margin-top to avoid overlap with header */
     text-align: center;
   }
 
@@ -199,15 +201,15 @@ p{
     margin-top: 20px;
   }
   h2{
-    font-size: 1.2rem;
-    width: 99%;
+    font-size: 2.4rem;
+    width: 100%;
     text-align: center;
     line-height: 1.5;
   }
   
   p{
-    font-size: 0.9rem;
-    width: 99%;
+    font-size: 1.7rem;
+    width: 100%;
     text-align: center;
     line-height: 1.5;
   }
@@ -260,6 +262,42 @@ p{
     font-size: 0.9rem;
     width: 99%;
     text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1368px) and (max-width: 1368px) and (max-height: 768px){
+  .scroll-item{
+    height: 82vh;
+  }
+  .fixed-image {
+    margin-top: 45px;
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: cover;
+  }
+}
+
+@media (min-width: 1920px) and (max-width: 1920px) and (max-height: 1080px) {
+  .fixed-image {
+    margin-top: 45px;
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: cover;
+  }
+  .scroll-item{
+    height: 82vh;
+  }
+  h2{
+    font-size: 2rem;
+    width: 99%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  p{
+    font-size: 1.7rem;
+    width: 99%;
+    text-align: left;
     line-height: 1.5;
   }
 }

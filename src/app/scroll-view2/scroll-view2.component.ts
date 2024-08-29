@@ -32,7 +32,7 @@ export class ScrollView2Component implements AfterViewInit {
     const itemElements = this.scrollContainer.nativeElement.querySelectorAll('.scroll-item');
 
     itemElements.forEach((element: HTMLElement, index: number) => {
-      if (element.offsetTop <= scrollPosition + window.innerHeight / 0.8 && element.offsetTop + element.clientHeight > scrollPosition + window.innerHeight / 2) {
+      if (element.offsetTop <= scrollPosition + window.innerHeight / 0.6 && element.offsetTop + element.clientHeight > scrollPosition + window.innerHeight / 1) {
         this.changeImage(index);
       }
     });

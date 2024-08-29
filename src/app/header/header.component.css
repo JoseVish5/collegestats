@@ -6,7 +6,7 @@
   top: 0; /* Sticks the header to the top when it reaches there */
   width: 100%; /* Ensures the header spans the entire width */
   z-index: 1000;
-  background-image: url(/public/logo.svg);
+  /* background-image: url(/public/logo.svg); */
   background-size: cover; /* Ensures the image covers the entire header */
   background-blend-mode: overlay; /* Blends the image with the background color */
 }

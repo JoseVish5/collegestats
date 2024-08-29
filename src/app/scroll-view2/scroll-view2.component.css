@@ -1,174 +1,303 @@
 /* Base styles */
 .scroll-container {
-    display: flex;
-    height: 95vh;
-    overflow-y: auto;
-    scroll-behavior: smooth;
+  display: flex;
+  height: 95vh;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.headline {
+  color: black;
+  font-weight: 700;
+  font-family: "Montserrat", Arial, sans-serif;
+  margin-bottom: -40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.fixed-image-container {
+  margin-bottom: 32px;
+  position: absolute;
+  width: 89%;
+  height: 89vh;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  overflow: hidden;
+  z-index: 1; /* Ensure it stays behind the text box */
+}
+
+.fixed-image {
+  margin-top: 45px;
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: cover;
+}
+
+.scroll-content {
+  flex: 1 0 1%;
+  margin-left: 62%;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  z-index: 1;
+}
+
+.scroll-item {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scroll-text {
+  width: 100%;
+}
+
+h2{
+  font-size: 1.6rem;
+  width: 99%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+p{
+  font-size: 1.2rem;
+  width: 99%;
+  text-align: left;
+  line-height: 1.5;
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .fixed-image-container {
+    width: 103%;
+    height: auto;
+    margin-top: -3px;
+    z-index: 2;
   }
-  
-  .headline {
-    color: black;
-    font-weight: 700;
-    font-family: "Montserrat", Arial, sans-serif;
-    margin-bottom: -40px;
-    margin-top: 40px;
+
+  .fixed-image {
+    margin-top: 0px;
+  }
+
+  .scroll-container{
+    height: 93vh;
+  }
+
+  .scroll-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .scroll-text {
+    width: 100%;
+    font-size: xx-large;
+    margin-top: 646px;
     text-align: center;
   }
-  
-  .fixed-image-container {
-    position: absolute;
-    width: 70%;
-    height: 98.4vh;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    overflow: hidden;
-    z-index: 1; /* Ensure it stays behind the text box */
+
+  .headline {
+    margin-bottom: -20px;
+    margin-top: 20px;
+  }
+  h2{
+    font-size: 2.8rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
   }
   
+  p{
+    font-size: 2rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 992px) {
+  .fixed-image-container {
+    width: 97%; /* Adjust to fit the screen */
+    height: auto;
+    margin-top: -3px;
+    z-index: 2;
+  }
+
   .fixed-image {
-    margin-top: 95px;
-    max-width: 75%;
-    max-height: 75%;
+    margin-top: 0;
+    max-width: 100%; /* Ensure the image scales correctly */
+    max-height: 100%; /* Ensure the image scales correctly */
+  }
+
+  .scroll-container{
+    height: 93vh;
+  }
+
+  .scroll-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .scroll-text {
+    width: 100%;
+    font-size: xx-large;
+    margin-top: 613px; /* Adjusted margin-top to avoid overlap with header */
+    text-align: center;
+  }
+
+  .headline {
+    margin-bottom: -20px;
+    margin-top: 20px;
+  }
+  h2{
+    font-size: 2.4rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  p{
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .fixed-image-container {
+    width: 97%; /* Adjust to fit the screen */
+    height: auto;
+    margin-top: -3px;
+    z-index: 2;
+  }
+
+  .fixed-image {
+    margin-top: 0;
+    max-width: 100%; /* Ensure the image scales correctly */
+    max-height: 100%; /* Ensure the image scales correctly */
+  }
+
+  .scroll-container{
+    height: 93vh;
+  }
+
+  .scroll-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .scroll-text {
+    width: 100%;
+    font-size: xx-large;
+    margin-top: 400px; /* Adjusted margin-top to avoid overlap with header */
+    text-align: center;
+  }
+
+  .headline {
+    margin-bottom: -20px;
+    margin-top: 20px;
+  }
+  h2{
+    font-size: 2.4rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  p{
+    font-size: 1.7rem;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media (max-width: 576px) {
+  .fixed-image-container {
+    width: 97%;
+    height: auto;
+    margin-top: -1px;
+    z-index: 2;
+  }
+
+  .fixed-image {
+    margin-top: 0px;
+  }
+
+  .scroll-container{
+    height: 90vh;
+  }
+
+  .scroll-item{
+    height: 89vh;
+  }
+
+  .scroll-content {
+    margin-left: 0;
+    padding: 10px;
+  }
+
+  .scroll-text {
+    width: 100%;
+    font-size: medium;
+    margin-top: 300px;
+    text-align: center;
+  }
+
+  .headline {
+    margin-bottom: -20px;
+    margin-top: 20px;
+  }
+  h2{
+    font-size: 1.2rem;
+    width: 99%;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  p{
+    font-size: 0.9rem;
+    width: 99%;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 1368px) and (max-width: 1368px) and (max-height: 768px){
+  .scroll-item{
+    height: 82vh;
+  }
+  .fixed-image {
+    margin-top: 45px;
+    max-width: 85%;
+    max-height: 85%;
     object-fit: cover;
   }
-  
-  .scroll-content {
-    flex: 1 0 1%;
-    margin-left: 70%;
-    padding: 20px;
-    margin-bottom: 20px;
+}
+
+@media (min-width: 1920px) and (max-width: 1920px) and (max-height: 1080px) {
+  .fixed-image {
+    margin-top: 45px;
+    max-width: 85%;
+    max-height: 85%;
+    object-fit: cover;
   }
-  
-  .scroll-item {
-    height: 98vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .scroll-item{
+    height: 82vh;
   }
-  
-  .scroll-text {
-    font-size: x-large;
-    width: 55%;
+  h2{
+    font-size: 2rem;
+    width: 99%;
+    text-align: center;
+    line-height: 1.5;
   }
-  
-  /* Responsive styles */
-  @media (max-width: 1200px) {
-    .fixed-image-container {
-      width: 135%;
-      height: auto;
-      margin-top: 15px;
-    }
-  
-    .fixed-image {
-      margin-top: 0px;
-    }
-  
-    .scroll-content {
-      margin-left: 0;
-      padding: 10px;
-    }
-  
-    .scroll-text {
-      width: 100%;
-      font-size: xx-large;
-      margin-top: 646px;
-      text-align: center;
-    }
-  
-    .headline {
-      margin-bottom: -20px;
-      margin-top: 20px;
-    }
+  p{
+    font-size: 1.7rem;
+    width: 99%;
+    text-align: left;
+    line-height: 1.5;
   }
-  
-  @media (max-width: 992px) {
-    .fixed-image-container {
-      width: 100%; /* Adjust to fit the screen */
-      height: auto;
-      margin-top: 15px;
-    }
-  
-    .fixed-image {
-      margin-top: 0;
-      max-width: 100%; /* Ensure the image scales correctly */
-      max-height: 100%; /* Ensure the image scales correctly */
-    }
-  
-    .scroll-content {
-      margin-left: 0;
-      padding: 10px;
-    }
-  
-    .scroll-text {
-      width: 100%;
-      font-size: xx-large;
-      margin-top: 613px; /* Adjusted margin-top to avoid overlap with header */
-      text-align: center;
-    }
-  
-    .headline {
-      margin-bottom: -20px;
-      margin-top: 20px;
-    }
-  }
-  
-  
-  @media (max-width: 768px) {
-    .fixed-image-container {
-      width: 100%;
-      height: auto;
-      margin-top: 40px;
-    }
-  
-    .fixed-image {
-      margin-top: 0px;
-    }
-  
-    .scroll-content {
-      margin-left: 0;
-      padding: 10px;
-    }
-  
-    .scroll-text {
-      width: 100%;
-      font-size: medium;
-      margin-top: 250px;
-      text-align: center;
-    }
-  
-    .headline {
-      margin-bottom: -20px;
-      margin-top: 20px;
-    }
-  }
-  
-  @media (max-width: 576px) {
-    .fixed-image-container {
-      width: 100%;
-      height: auto;
-      margin-top: 26px;
-    }
-  
-    .fixed-image {
-      margin-top: 0px;
-    }
-  
-    .scroll-content {
-      margin-left: 0;
-      padding: 10px;
-    }
-  
-    .scroll-text {
-      width: 100%;
-      font-size: medium;
-      margin-top: 250px;
-      text-align: center;
-    }
-  
-    .headline {
-      margin-bottom: -20px;
-      margin-top: 20px;
-    }
-  }
-  
+}

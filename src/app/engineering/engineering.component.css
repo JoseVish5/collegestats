@@ -31,6 +31,32 @@
     font-size: 1.2rem;
     margin: 10px 0 0;
   }
+
+  .content {
+    text-align: center;
+  }
+
+  .headline {
+    color: black;
+    font-weight: 700;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin: 5px 0;
+    margin-bottom: 25px;
+  }
+
+  .paragraph2 {
+    color: #404040;
+    font-family: Knowledge, sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    font-weight: 100;
+    text-align: center;
+    max-width: 700px;
+    margin: 20px auto;
+    margin-bottom: 25px;
+  }
   
   /* Responsive Design */
   @media (max-width: 1200px) {
@@ -46,6 +72,22 @@
     .text {
       line-height: 1.5;
       font-size: 1.8rem;
+    }
+    .headline {
+      font-size: 2.5rem; 
+      margin-bottom: 35px;
+    }
+
+    .paragraph2 {
+      color: #404040;
+      font-family: Knowledge, sans-serif;
+      line-height: 1.6;
+      font-weight: 100;
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 10px auto;
+      max-width: 700px;
+      margin-bottom: 35px;
     }
   }
   
@@ -63,7 +105,22 @@
       font-size: 1rem;
       line-height: 1.5;
     }
+    .headline {
+      font-size: 2.5rem; 
+      margin-bottom: 35px;
+    }
 
+    .paragraph2 {
+      color: #404040;
+      font-family: Knowledge, sans-serif;
+      line-height: 1.6;
+      font-weight: 100;
+      font-size: 1.5rem;
+      text-align: center;
+      margin: 10px auto;
+      max-width: 700px;
+      margin-bottom: 35px;
+    }
   }
   
   @media (max-width: 768px) {
@@ -81,6 +138,13 @@
       line-height: 1.5;
       font-size: 1rem;
     }
+    .headline {
+      font-size: 2rem; 
+    }
+    .paragraph2 {
+      margin-left: 8px;
+      font-size: 0.8rem;
+  }
   }
   
   @media (max-width: 576px) {
@@ -97,5 +161,20 @@
       line-height: 1.5;
       font-size: 0.9rem;
     }
+    .paragraph2 {
+      color: #404040;
+      font-family: Knowledge, sans-serif;
+      line-height: 1.6;
+      font-weight: 400;
+      font-size: 0.9rem; 
+      text-align: center;
+      margin: 10px auto;
+      max-width: 90%;
+      margin-bottom: 20px;
+    }
+
+    .headline {
+      margin-top: 50px;
+      font-size: 1.6rem;
+    }
   }
-  

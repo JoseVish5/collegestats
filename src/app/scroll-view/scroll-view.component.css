@@ -16,9 +16,10 @@
 }
 
 .fixed-image-container {
+  margin-bottom: 32px;
   position: absolute;
-  width: 70%;
-  height: 98.4vh;
+  width: 89%;
+  height: 89vh;
   display: flex;
   justify-content: left;
   align-items: left;
@@ -27,37 +28,53 @@
 }
 
 .fixed-image {
-  margin-top: 95px;
-  max-width: 75%;
-  max-height: 75%;
+  margin-top: 45px;
+  max-width: 95%;
+  max-height: 95%;
   object-fit: cover;
 }
 
 .scroll-content {
   flex: 1 0 1%;
-  margin-left: 70%;
+  margin-left: 62%;
   padding: 20px;
   margin-bottom: 20px;
+  width: 50%;
+  z-index: 1;
 }
 
 .scroll-item {
-  height: 98vh;
+  height: 95vh;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .scroll-text {
-  font-size: x-large;
-  width: 55%;
+  width: 100%;
+}
+
+h2{
+  font-size: 1.6rem;
+  width: 99%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+p{
+  font-size: 1.2rem;
+  width: 99%;
+  text-align: left;
+  line-height: 1.5;
 }
 
 /* Responsive styles */
 @media (max-width: 1200px) {
   .fixed-image-container {
-    width: 135%;
+    width: 130%;
     height: auto;
     margin-top: 15px;
+    z-index: 2;
   }
 
   .fixed-image {
@@ -84,9 +101,10 @@
 
 @media (max-width: 992px) {
   .fixed-image-container {
-    width: 100%; /* Adjust to fit the screen */
+    width: 97%; /* Adjust to fit the screen */
     height: auto;
     margin-top: 15px;
+    z-index: 2;
   }
 
   .fixed-image {
@@ -116,9 +134,10 @@
 
 @media (max-width: 768px) {
   .fixed-image-container {
-    width: 100%;
+    width: 97%;
     height: auto;
     margin-top: 40px;
+    z-index: 2;
   }
 
   .fixed-image {
@@ -145,9 +164,10 @@
 
 @media (max-width: 576px) {
   .fixed-image-container {
-    width: 100%;
+    width: 97%;
     height: auto;
     margin-top: 26px;
+    z-index: 2;
   }
 
   .fixed-image {

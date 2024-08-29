@@ -21,7 +21,7 @@
     width: auto;
   }
   
-  .headline {
+  .headline1 {
     font-size: 2.5rem;
     margin: 0;
   }
@@ -66,7 +66,7 @@
     .overlay {
       width: 80%;
     }
-    .headline {
+    .headline1 {
       font-size: 3rem; /* Slightly smaller for large tablets and desktops */
     }
     .text {
@@ -98,7 +98,7 @@
     .overlay {
       width: 80%;
     }
-    .headline {
+    .headline1 {
       font-size: 1.8rem; /* Smaller for tablets */
     }
     .text {
@@ -131,7 +131,7 @@
     .overlay {
       width: 80%;
     }
-    .headline {
+    .headline1 {
       font-size: 2rem; /* Smaller for small tablets and large phones */
     }
     .text {
@@ -154,7 +154,7 @@
     .overlay {
       width: 80%;
     }
-    .headline {
+    .headline1 {
       font-size: 1.8rem; /* Smaller for mobile phones */
     }
     .text {

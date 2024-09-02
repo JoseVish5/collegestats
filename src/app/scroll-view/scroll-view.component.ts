@@ -7,7 +7,7 @@ import { Component, AfterViewInit, ElementRef, ViewChild } from '@angular/core';
 })
 export class ScrollViewComponent implements AfterViewInit {
   items = [
-    { title: 'The share of male students across various engineering courses in 2013', description: '', image: 'e1.png' },
+    { title: 'The share of male students across various engineering courses in 2013', description1: '*scroll here', image: 'e1.png' },
     { title: '', description: 'In 2013, male students dominated the traditional engineering courses, especially mechanical engineering, for which about 96% of the students enrolled were male. They also enrolled in higher shares for the civil and aeronautical engineering courses.', image: 'e2.png' },
     { title: '', description: 'Within these core engineering disciplines, women only came close to matching their numbers in the computer engineering and information technology, where they formed nearly half the population.', image: 'e3.png' },
     { title: 'The share of male students across various engineering courses in 2022', description: '', image: 'e4.png' },
@@ -16,7 +16,7 @@ export class ScrollViewComponent implements AfterViewInit {
     { title: '', description: 'Male students are also dominating in newly introduced courses such as data science, where they made up 78.3% of the total number of students enrolled, and Artifical Intelligence, where they formed 70%.', image: 'e7.png' },
     { title: 'The share of female students across various engineering courses in 2013', description: '', image: 'e8.png' },
     { title: '', description: 'In 2013, large numbers of female students took up traditional courses such as electronics engineering, computer engineering, and information technology (IT). However, the only course in which they managed to outnumber men was architecture, where they formed a 51% share of students enrolments.', image: 'e9.png' },
-    { title: '', description: 'They lacked a presence in courses such as marine engineering and mining engineering, where they formed less than two percent of the student enrolments.', image: 'e10.png' },
+    { title: '', description: 'They lacked a presence in courses such as marine engineering and mining engineering, where they formed less than two percent of the student enrolments. Mechanical engineering was a major course from which they were primarily absent.', image: 'e10.png' },
     { title: 'The share of female students across various engineering courses in 2022', description: '', image: 'e11.png' },
     { title: '', description: 'Despite continuing to enroll for core courses such as computer engineering and information technology, the presence of female students in these disciplines dropped by about 10% points each, as the decade progressed.', image: 'e12.png' },
     { title: '', description: 'However, with a possible sway in societal attitudes and the introduction of new courses, female students started enrolling in disciplines where they were previously had little presence. In mining engineering, the share of female students was 1.2% in 2013 and increased to 8% in 2022. Similarly, in marine engineering, the share of female students jumped from 1.5% to 6.4%', image: 'e13.png' },
@@ -50,4 +50,3 @@ export class ScrollViewComponent implements AfterViewInit {
     this.currentImage = this.items[index].image;
   }
 }
-

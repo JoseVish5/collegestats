@@ -6,6 +6,7 @@
     <div *ngFor="let item of items; let i = index" class="scroll-item" [id]="'item-' + i">
       <div class="scroll-text">
         <h2>{{ item.title }}</h2>
+        <p class="p1">{{ item.description1 }}</p>
         <p>{{ item.description }}</p>
       </div>
     </div>

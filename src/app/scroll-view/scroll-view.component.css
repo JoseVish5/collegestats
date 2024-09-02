@@ -18,13 +18,13 @@
 .fixed-image-container {
   margin-bottom: 32px;
   position: absolute;
-  width: 89%;
+  width: 75%;
   height: 89vh;
   display: flex;
   justify-content: left;
   align-items: left;
   overflow: hidden;
-  z-index: 1; /* Ensure it stays behind the text box */
+  z-index: 1;
 }
 
 .fixed-image {
@@ -67,18 +67,26 @@ p{
   text-align: left;
   line-height: 1.5;
 }
+.p1{
+  font-size: 1.2rem;
+  width: 99%;
+  text-align: right;
+  line-height: 1.5;
+}
 
 /* Responsive styles */
 @media (max-width: 1200px) {
   .fixed-image-container {
-    width: 103%;
+    width: 99%;
     height: auto;
     margin-top: -3px;
     z-index: 2;
   }
 
   .fixed-image {
-    margin-top: 0px;
+    margin-top: 0;
+    max-width: 106%; /* Ensure the image scales correctly */
+    max-height: 106%; /* Ensure the image scales correctly */
   }
 
   .scroll-container{
@@ -108,7 +116,7 @@ p{
     line-height: 1.5;
   }
   
-  p{
+  p, .p1{
     font-size: 2rem;
     width: 100%;
     text-align: center;
@@ -118,7 +126,7 @@ p{
 
 @media (max-width: 992px) {
   .fixed-image-container {
-    width: 97%; /* Adjust to fit the screen */
+    width: 99%; /* Adjust to fit the screen */
     height: auto;
     margin-top: -3px;
     z-index: 2;
@@ -126,8 +134,8 @@ p{
 
   .fixed-image {
     margin-top: 0;
-    max-width: 100%; /* Ensure the image scales correctly */
-    max-height: 100%; /* Ensure the image scales correctly */
+    max-width: 106%; /* Ensure the image scales correctly */
+    max-height: 106%; /* Ensure the image scales correctly */
   }
 
   .scroll-container{
@@ -151,14 +159,14 @@ p{
     margin-top: 20px;
   }
   h2{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
     width: 100%;
     text-align: center;
     line-height: 1.5;
   }
   
-  p{
-    font-size: 1.7rem;
+  p, .p1{
+    font-size: 2rem;
     width: 100%;
     text-align: center;
     line-height: 1.5;
@@ -168,7 +176,7 @@ p{
 
 @media (max-width: 768px) {
   .fixed-image-container {
-    width: 97%; /* Adjust to fit the screen */
+    width: 99%; /* Adjust to fit the screen */
     height: auto;
     margin-top: -3px;
     z-index: 2;
@@ -176,8 +184,8 @@ p{
 
   .fixed-image {
     margin-top: 0;
-    max-width: 100%; /* Ensure the image scales correctly */
-    max-height: 100%; /* Ensure the image scales correctly */
+    max-width: 106%; /* Ensure the image scales correctly */
+    max-height: 106%; /* Ensure the image scales correctly */
   }
 
   .scroll-container{
@@ -207,7 +215,7 @@ p{
     line-height: 1.5;
   }
   
-  p{
+  p, .p1{
     font-size: 1.7rem;
     width: 100%;
     text-align: center;
@@ -217,7 +225,7 @@ p{
 
 @media (max-width: 576px) {
   .fixed-image-container {
-    width: 97%;
+    width: 99%;
     height: auto;
     margin-top: -1px;
     z-index: 2;
@@ -258,7 +266,7 @@ p{
     line-height: 1.5;
   }
   
-  p{
+  p, .p1{
     font-size: 0.9rem;
     width: 99%;
     text-align: center;
@@ -294,10 +302,13 @@ p{
     text-align: center;
     line-height: 1.5;
   }
-  p{
+  p, .p1{
     font-size: 1.7rem;
     width: 99%;
     text-align: left;
     line-height: 1.5;
+  }
+  .p1{
+    text-align: right;
   }
 }
